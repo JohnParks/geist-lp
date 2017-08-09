@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,307 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/* line 8, ../sass/screen.scss */
+#container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+/* line 14, ../sass/screen.scss */
+#container .blue {
+  color: #0081ff;
+  font-weight: bold;
+}
+/* line 19, ../sass/screen.scss */
+#container section {
+  padding: 30px;
+}
+/* line 23, ../sass/screen.scss */
+#container img {
+  width: 100%;
+}
+/* line 27, ../sass/screen.scss */
+#container #header-section {
+  padding: 0px;
+}
+/* line 29, ../sass/screen.scss */
+#container #header-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* line 36, ../sass/screen.scss */
+#container #logo-banner {
+  background-color: #333333;
+}
+/* line 39, ../sass/screen.scss */
+#container #logo-banner .logo-holder {
+  width: 50%;
+  text-align: center;
+}
+/* line 43, ../sass/screen.scss */
+#container #logo-banner .logo-holder img {
+  margin: 0 auto;
+}
+/* line 50, ../sass/screen.scss */
+#container #main-section h2 {
+  text-align: center;
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+/* line 57, ../sass/screen.scss */
+#container #main-section .content {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/* line 68, ../sass/screen.scss */
+#container #main-section .content .copy {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/* line 79, ../sass/screen.scss */
+#container #main-section .content .copy p {
+  line-height: 1.7;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* line 84, ../sass/screen.scss */
+#container #main-section .content .copy p.blue {
+  font-size: 26px;
+}
+/* line 90, ../sass/screen.scss */
+#container #main-section .content div {
+  width: 48%;
+}
+/* line 96, ../sass/screen.scss */
+#container #bullet-points {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  background-image: url("../../assets/background.png");
+  padding: 30px 60px;
+  font-size: 18px;
+}
+/* line 104, ../sass/screen.scss */
+#container #bullet-points div {
+  color: white;
+  width: 50%;
+  line-height: 1.5;
+}
+/* line 109, ../sass/screen.scss */
+#container #bullet-points div h3 {
+  font-weight: bold;
+  font-size: 22px;
+}
+/* line 115, ../sass/screen.scss */
+#container #bullet-points div ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+/* line 124, ../sass/screen.scss */
+#container #articles h2 {
+  padding: 10px 0px 30px 0px;
+  text-align: center;
+  font-size: 28px;
+}
+/* line 130, ../sass/screen.scss */
+#container #articles .article-holder {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/* line 141, ../sass/screen.scss */
+#container #articles .article-holder article {
+  width: 30%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/* line 153, ../sass/screen.scss */
+#container #articles .article-holder article p {
+  margin: 15px 0px;
+  line-height: 1.5;
+  font-size: 18px;
+}
+/* line 159, ../sass/screen.scss */
+#container #articles .article-holder article a.blue-btn {
+  background-color: #0081ff;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 7px;
+  border-radius: 7px;
+}
+/* line 171, ../sass/screen.scss */
+#container footer {
+  background-image: url("../../assets/background.png");
+  background-size: cover;
+}
+/* line 175, ../sass/screen.scss */
+#container footer #footer-stuffs {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  text-align: center;
+  width: 55%;
+  margin: 0px auto;
+  padding: 30px 0px;
+}
+/* line 190, ../sass/screen.scss */
+#container footer #footer-stuffs img {
+  max-width: 300px;
+}
+/* line 194, ../sass/screen.scss */
+#container footer #footer-stuffs h4 {
+  color: #efcb00;
+  font-weight: bold;
+  font-size: 24px;
+}
+/* line 200, ../sass/screen.scss */
+#container footer #footer-stuffs .social-icons {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 40px 0px;
+}
+/* line 212, ../sass/screen.scss */
+#container footer #footer-stuffs .social-icons img {
+  width: 75%;
+}
+
+/* Let's kick off some media queries */
+@media only screen and (max-width: 480px) {
+  /* line 225, ../sass/screen.scss */
+  #container #main-section h2 {
+    font-size: 24px;
+  }
+  /* line 231, ../sass/screen.scss */
+  #container #main-section .content .copy p {
+    font-size: 17px;
+  }
+  /* line 234, ../sass/screen.scss */
+  #container #main-section .content .copy p.blue {
+    font-size: 18px;
+  }
+  /* line 242, ../sass/screen.scss */
+  #container #bullet-points div {
+    font-size: 15px;
+  }
+  /* line 247, ../sass/screen.scss */
+  #container #articles .article-holder {
+    display: block;
+  }
+  /* line 250, ../sass/screen.scss */
+  #container #articles .article-holder article {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 262, ../sass/screen.scss */
+  #container #main-section .content {
+    display: block;
+  }
+  /* line 265, ../sass/screen.scss */
+  #container #main-section .content p {
+    margin: 20px 0px;
+  }
+  /* line 269, ../sass/screen.scss */
+  #container #main-section .content div {
+    width: 100%;
+  }
+  /* line 275, ../sass/screen.scss */
+  #container #bullet-points {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 280, ../sass/screen.scss */
+  #container #bullet-points div {
+    width: 100%;
+    margin-bottom: 17px;
+  }
 }

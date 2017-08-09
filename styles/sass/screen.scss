@@ -4,3 +4,283 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+#container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+
+    .blue {
+        color: #0081ff;
+        font-weight: bold;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #header-section {
+        padding: 0px;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    #logo-banner {
+        background-color: #333333;
+        
+        .logo-holder {
+            width: 50%;
+            text-align: center;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    #main-section {
+        h2 {
+            text-align: center;
+            font-size: 44px;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+
+        .content {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+
+            .copy {
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+
+                p {
+                    line-height: 1.7;
+                    font-size: 20px;
+                    font-weight: bold;
+
+                    &.blue {
+                        font-size: 26px;
+                    }
+                }
+            }
+
+            div {
+                width: 48%;
+            }
+        }
+    }
+
+    #bullet-points {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        background-image: url("../../assets/background.png");
+        padding: 30px 60px;
+        font-size: 18px;
+
+        div {
+            color: white;
+            width: 50%;
+            line-height: 1.5;
+
+            h3 {
+                font-weight: bold;
+                font-size: 22px;
+            }
+
+            ul {
+                li {
+                    list-style-type: disc;
+                    list-style-position: inside;
+                }
+            }
+        }
+    }
+
+    #articles {
+        h2 {
+            padding: 10px 0px 30px 0px;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .article-holder {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+
+            article {
+                width: 30%;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+
+                p {
+                    margin: 15px 0px;
+                    line-height: 1.5;
+                    font-size: 18px;
+                }
+
+                a.blue-btn {
+                    background-color: #0081ff;
+                    color: white;
+                    text-decoration: none;
+                    text-align: center;
+                    padding: 7px;
+                    border-radius: 7px;
+                }
+            }
+        }
+    }
+
+    footer {
+        background-image: url("../../assets/background.png");
+        background-size: cover;
+
+        #footer-stuffs {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            text-align: center;
+            width: 55%;
+            margin: 0px auto;
+            padding: 30px 0px;
+
+            img {
+                max-width: 300px;
+            }
+
+            h4 {
+                color: #efcb00;
+                font-weight: bold;
+                font-size: 24px;
+            }
+
+            .social-icons {
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                margin: 40px 0px;
+
+                img {
+                    width: 75%;
+                }
+            }
+        }
+    }
+
+}
+
+/* Let's kick off some media queries */
+@media only screen and (max-width: 480px) {
+    #container {
+        #main-section {
+            h2 {
+                font-size: 24px;
+            }
+
+            .content {
+                .copy {
+                    p {
+                        font-size: 17px;
+
+                        &.blue {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        #bullet-points {
+            div {
+                font-size: 15px;
+            }
+        }
+        #articles {
+            .article-holder {
+                display: block;
+
+                article {
+                    margin-bottom: 40px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #container {
+        #main-section {
+            .content {
+                display: block;
+
+                p {
+                    margin: 20px 0px;
+                }
+
+                div {
+                    width: 100%;
+                }
+            }
+        }
+
+        #bullet-points {
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+
+            div {
+                width: 100%;
+                margin-bottom: 17px;
+            }
+        }
+    }
+}
