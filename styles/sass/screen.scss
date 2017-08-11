@@ -26,6 +26,7 @@
 
     #header-section {
         padding: 0px;
+        position: relative;
         img {
             width: 100%;
             height: auto;
@@ -33,16 +34,22 @@
         }
     }
 
+    #pardot-form {
+        position: absolute;
+        left: 65%;
+        top: 10%;
+        background-color: rgba(0,0,0,0.25);
+    }
+
     #logo-banner {
         background-color: #333333;
         
         .logo-holder {
-            width: 50%;
             text-align: center;
 
             img {
                 margin: 0 auto;
-                max-width: 360px;
+                max-width: 440px;
             }
         }
     }
@@ -273,6 +280,30 @@
             }
         }
 
+        #pardot-form {
+            position: initial;
+            margin-bottom: 0px;
+
+            p {
+                label {
+                    text-align: center;
+                    float: none;
+                    width: 100%;
+                    background: none!important;
+                }
+
+                &.required {
+                    label::after {
+                        content: url(/images/required.gif);
+                    }
+                }
+
+                .submit {
+                    margin-left: 0.5em;
+                }
+            }
+        }
+
         #bullet-points {
             -webkit-flex-direction: column;
             -ms-flex-direction: column;
@@ -282,6 +313,16 @@
                 width: 100%;
                 margin-bottom: 17px;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #container {
+
+        #pardot-form {
+            left: 58%;
+            text-align: center;
         }
     }
 }

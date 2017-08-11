@@ -90,35 +90,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 27, ../sass/screen.scss */
 #container #header-section {
   padding: 0px;
+  position: relative;
 }
-/* line 29, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 #container #header-section img {
   width: 100%;
   height: auto;
   display: block;
 }
-/* line 36, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
+#container #pardot-form {
+  position: absolute;
+  left: 65%;
+  top: 10%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+/* line 44, ../sass/screen.scss */
 #container #logo-banner {
   background-color: #333333;
 }
-/* line 39, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 #container #logo-banner .logo-holder {
-  width: 50%;
   text-align: center;
 }
-/* line 43, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 #container #logo-banner .logo-holder img {
   margin: 0 auto;
-  max-width: 360px;
+  max-width: 440px;
 }
-/* line 51, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 #container #main-section h2 {
   text-align: center;
   font-size: 44px;
   line-height: 1.2;
   margin-bottom: 30px;
 }
-/* line 58, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 #container #main-section .content {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -130,7 +137,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-/* line 69, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 #container #main-section .content .copy {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -142,21 +149,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-/* line 80, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 #container #main-section .content .copy p {
   line-height: 1.7;
   font-size: 20px;
   font-weight: bold;
 }
-/* line 85, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 #container #main-section .content .copy p.blue {
   font-size: 26px;
 }
-/* line 91, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 #container #main-section .content div {
   width: 48%;
 }
-/* line 97, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 #container #bullet-points {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -165,29 +172,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 30px 60px;
   font-size: 18px;
 }
-/* line 105, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 #container #bullet-points div {
   color: white;
   width: 50%;
   line-height: 1.5;
 }
-/* line 110, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 #container #bullet-points div h3 {
   font-weight: bold;
   font-size: 22px;
 }
-/* line 116, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 #container #bullet-points div ul li {
   list-style-type: disc;
   list-style-position: inside;
 }
-/* line 125, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 #container #articles h2 {
   padding: 10px 0px 30px 0px;
   text-align: center;
   font-size: 28px;
 }
-/* line 131, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 #container #articles .article-holder {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -199,7 +206,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-/* line 142, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 #container #articles .article-holder article {
   width: 30%;
   display: -ms-flexbox;
@@ -212,13 +219,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-/* line 154, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 #container #articles .article-holder article p {
   margin: 15px 0px;
   line-height: 1.5;
   font-size: 18px;
 }
-/* line 160, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 #container #articles .article-holder article a.blue-btn {
   background-color: #0081ff;
   color: white;
@@ -227,12 +234,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 7px;
   border-radius: 7px;
 }
-/* line 172, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 #container footer {
   background-image: url("http://go.geistglobal.com/l/73132/2017-08-09/8glmsq/73132/130637/background.png");
   background-size: cover;
 }
-/* line 176, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 #container footer #footer-stuffs {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -248,17 +255,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 0px auto;
   padding: 30px 0px;
 }
-/* line 191, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 #container footer #footer-stuffs img {
   max-width: 300px;
 }
-/* line 195, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 #container footer #footer-stuffs h4 {
   color: #efcb00;
   font-weight: bold;
   font-size: 24px;
 }
-/* line 201, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 #container footer #footer-stuffs .social-icons {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -271,61 +278,88 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   justify-content: space-between;
   margin: 40px 0px;
 }
-/* line 213, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 #container footer #footer-stuffs .social-icons img {
   width: 75%;
 }
 
 /* Let's kick off some media queries */
 @media only screen and (max-width: 480px) {
-  /* line 226, ../sass/screen.scss */
+  /* line 233, ../sass/screen.scss */
   #container #main-section h2 {
     font-size: 24px;
   }
-  /* line 232, ../sass/screen.scss */
+  /* line 239, ../sass/screen.scss */
   #container #main-section .content .copy p {
     font-size: 17px;
   }
-  /* line 235, ../sass/screen.scss */
+  /* line 242, ../sass/screen.scss */
   #container #main-section .content .copy p.blue {
     font-size: 18px;
   }
-  /* line 243, ../sass/screen.scss */
+  /* line 250, ../sass/screen.scss */
   #container #bullet-points div {
     font-size: 15px;
   }
-  /* line 248, ../sass/screen.scss */
+  /* line 255, ../sass/screen.scss */
   #container #articles .article-holder {
     display: block;
   }
-  /* line 251, ../sass/screen.scss */
+  /* line 258, ../sass/screen.scss */
   #container #articles .article-holder article {
     margin-bottom: 40px;
     width: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 263, ../sass/screen.scss */
+  /* line 270, ../sass/screen.scss */
   #container #main-section .content {
     display: block;
   }
-  /* line 266, ../sass/screen.scss */
+  /* line 273, ../sass/screen.scss */
   #container #main-section .content p {
     margin: 20px 0px;
   }
-  /* line 270, ../sass/screen.scss */
+  /* line 277, ../sass/screen.scss */
   #container #main-section .content div {
     width: 100%;
   }
-  /* line 276, ../sass/screen.scss */
+  /* line 283, ../sass/screen.scss */
+  #container #pardot-form {
+    position: initial;
+    margin-bottom: 0px;
+  }
+  /* line 288, ../sass/screen.scss */
+  #container #pardot-form p label {
+    text-align: center;
+    float: none;
+    width: 100%;
+    background: none !important;
+  }
+  /* line 296, ../sass/screen.scss */
+  #container #pardot-form p.required label::after {
+    content: url(/images/required.gif);
+  }
+  /* line 301, ../sass/screen.scss */
+  #container #pardot-form p .submit {
+    margin-left: 0.5em;
+  }
+  /* line 307, ../sass/screen.scss */
   #container #bullet-points {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  /* line 281, ../sass/screen.scss */
+  /* line 312, ../sass/screen.scss */
   #container #bullet-points div {
     width: 100%;
     margin-bottom: 17px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* line 323, ../sass/screen.scss */
+  #container #pardot-form {
+    left: 58%;
+    text-align: center;
   }
 }
